@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Bree+Serif&family=Playball&family=Poppins:wght@400;600;800&family=Roboto+Mono:wght@100&family=Source+Sans+Pro:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%; /*changing relative font-size however 1 rem=16px;*/
+}
+
+body{
+    font-family:"Poppins",sans-serif; /*sans sarif is fall back font */
+}
+.con1{
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a{
+    text-align: center; /*Added text-align:center*/
+    text-decoration: none;
+    font-weight: 400;
+    font-size:1.6rem;
+    color: whitesmoke;
+}
+h1,h2,p{
+  margin:1.6rem 0;
+}
+h1{
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+h2{
+    font-weight: 800;
+    font-size: 2.4rem;
+}
+p{
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+img{
+    width:100%;
+    height: auto;
+}
+
+/* utility class (used as  variable)*/
+.row{
+    display: flex;
+    justify-content:space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+/*home*/
+.bghome{
+    position: absolute;
+    z-index:-1;
+    opacity: 0.8;
+    height: 110vh;
+}
+header{
+    position: relative;
+    color: whitesmoke;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4));
+    margin-bottom: 20px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+nav{
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between; /* used to move ul to right */
+}
+nav box-icon{
+    display: none;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+nav ul li a:hover{
+    color:#4caf50;
+    transition: 0.5s ease-in-out;
+}
+
+.header-content{
+
+    display: flex;
+    padding: 0 25%;
+    /* width:50%; */
+    /* top: 16%; */
+    /* left:21%; */
+    /* left: 50vh; */
+    /* position: relative; */
+    padding-bottom:8px;
+}
+.btn1{
+    display: inline;
+    width:200px;
+    background-color:palevioletred;
+    color: white;
+    font-size: 2rem;
+    padding: 12px 15px;
+    margin:8px 0;
+    border:none;
+    border-radius:15px;
+    cursor: pointer;
+    text-transform:uppercase;
+    /* margin: 10px 0px 10px 100px; */
+    margin: 10px 0px;
+}
+.btn1:hover{
+    background-color: wheat;
+    border-radius: 20px;
+    color: #222;
+}
+form{
+    margin-top: 2.4rem;
+    text-align: center;
+    /* margin-left:160px; */
+    margin-bottom: 20px;
+}
+input{
+    font-size: 1.8rem;
+}
+
+input[type=email]{
+    width:50% ;
+    padding: 12px 20px;
+    margin:1.2rem 0;
+    /* display: block; */
+    border: 1px solid #ccc;
+}
+.btn{
+    width: 50%;
+    background-color: #4caf50;
+    color: white;
+    font-size: 2rem;
+    padding: 14px 20px;
+    margin:8px 0;
+    border:none;
+    border-radius:5px;
+    cursor: pointer;
+    text-transform:uppercase;
+}
+/* pseudoselector placeholder */
+input::placeholder{
+    font-size: 1.3rem;
+    color: #ccc;
+}
+
+/*about section */
+.about-left,.about-middle,.about-right{
+    flex-basis:30%;  /*another way to set width to flex child*/
+    padding:1.6rem;
+}
+.bttn{
+    background-color: #4caf50;
+    color: white;
+    display: inline-block;
+    padding: 14px 20px;
+    margin:2rem 0;
+    border:none;
+    border-radius:5px;
+    cursor: pointer;
+    text-transform:uppercase;
+}
+
+/*about 2*/
+.about2{
+    background-color: #222;
+    color:whitesmoke ;
+}
+.about2-left{
+    flex-basis: 50%;
+}
+.about2-right{
+    flex-basis: 30%;
+}
+.card{
+    padding: 3rem 8rem;
+    color: #222;
+    background-color:#DCDCDC;
+    margin: 1.6rem;
+    text-align: center;
+}
+/*Process section*/
+.process .row{
+    justify-content: center;
+}
+.process-content{
+    margin-top: 100px;
+}
+.progress-bar{
+    width: 80%;
+    height:2px;
+    background-color: #222;
+    margin:auto;
+    position: relative;
+}
+.progress-bar .c1,
+.progress-bar .c2,
+.progress-bar .c3{
+    height: 20px;
+    width: 20px;
+    border-radius:50%;
+    background-color: #222;
+    position: absolute;
+}
+.progress-bar .c1{
+    top:-8px;
+    left:50px;
+}
+.progress-bar .c2{
+    top:-8px;
+    left:50%;
+}
+.progress-bar .c3{
+    top:-8px;
+    right:50px;
+}
+.box1,
+.box2,
+.box3{
+    padding: 1.8rem;
+}
+.process .box2{
+    text-align: center;
+}
+.process .box3{
+    text-align: right;
+}
+.process h2{
+    color: #4caf50;
+}
+/*contact section*/
+.bgcontact{
+    position:absolute;
+    z-index:-1;
+    opacity: 0.5;
+    height: 100vh;
+}
+.contact .row{
+    justify-content: center;
+}
+.contact form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    position: relative;
+}
+.contact form input{
+    width: 50%;
+}
+.contact textarea{
+    width: 50%;
+    height:150px;;
+    padding:12px 20px;
+    border: 1px solid #ccc;
+    font-size:1.3rem;
+    resize: none;
+    color: #ccc;
+    margin: 1.2rem 0;
+    font-family: "Poppins",sans-serif;
+}
+
+/*footer*/
+footer{
+    margin-top:8px;
+    /* position: fixed; */
+    height: 60px;
+    width: 100%;
+    background-color: #222;
+    color: whitesmoke;
+    text-align:center;
+    padding-top: 1px;
+}
+
+/* responsive using media querry */
+@media only screen and (max-width:760px){
+    .row{
+        flex-direction: column;
+    }
+    nav{
+        flex-direction: column;
+        position: relative; /*to move icon to right*/
+    }
+    nav box-icon{
+        display: block; /* to make it visible*/
+        position: absolute;
+        top:18px;
+        right:18px;
+    }
+    nav ul{
+        display: none;/*we would achieve hambergur using js*/
+    }
+    .showmenu{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        padding: 2% 0;
+    }
+    nav ul li a{
+        color:white;
+    }
+
+    /* header content */
+    .header-content{
+        width: 100%;
+        top:16%;
+        left: 0;
+        text-align: center;
+        padding: 0 8px;
+    }
+    input[type=text],
+    input[type=email]{
+        width: 80%;
+        margin: 1.2rem auto;
+    }
+
+    .progress-bar{
+        display: none;
+    }
+    .process-content{
+        margin-top: 20px;
+    }
+    .process .box1
+    .process .box2,
+    .process .box3{
+        text-align: center;
+    }
+
+    /*testimony*/
+    .testimony .test{
+        margin: 1.6rem 0;
+    }
+
+    .contact form input,
+    .contact form textarea{
+        width: 100%;
+    }
+    footer{
+        display: none;
+    }
+    form{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
